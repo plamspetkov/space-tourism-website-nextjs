@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-using-nextjs-and-framermotion-BBDXg7F5Ml)
+- Live Site URL: [Live](https://space-tourism-website-nextjs-five.vercel.app/)
 
 ## My process
 
@@ -50,6 +50,6 @@ I learn how to build a simple custom swappable carousel. Improve my understandin
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [plamspetkov](https://plamspetkov.com/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- LinkedIn - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - [@plmenpetkov](https://www.linkedin.com/in/plamen-petkov-711178122/)
