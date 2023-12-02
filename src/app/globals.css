@@ -3,25 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	font-size: 16px;
+	--font-bellefair: 'Bellefair', serif;
+	--font-barlow-condensed: 'Barlow Condensed, sans-serif';
+	--font-barlow: 'Barlow', sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	min-height: 100vh;
+	line-height: 1.5;
+
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	/* overflow: hidden; */
+}
+
+.h1 {
+	@apply text-text text-[1rem] font-barlowCondensed uppercase tracking-[0.16875rem] md:text-[1.25rem] lg:text-[1.75rem];
+}
+
+.navLink {
+	@apply font-barlowCondensed flex gap-[0.75rem] justify-center items-center h-full md:border-b-[0.1875rem] border-[hsla(0,0%,100%,0)] text-[0.875rem] lg:text-[1rem];
+}
+
+.active {
+	@apply border-r-4 md:border-r-0 md:border-b-[0.1875rem] border-white;
+}
+
+/* PAGE BACKGROUNDS */
+
+.homeBg {
+	@apply bg-home-mobile bg-no-repeat bg-bottom bg-cover sm:bg-home-tablet lg:bg-home-desktop;
+}
+.destinationBg {
+	@apply bg-destination-mobile bg-no-repeat bg-bottom bg-cover sm:bg-destination-tablet lg:bg-destination-desktop;
+}
+.crewBg {
+	@apply bg-crew-mobile bg-no-repeat bg-bottom bg-cover relative  sm:bg-crew-tablet lg:bg-crew-desktop;
+}
+.technologyBg {
+	@apply bg-technology-mobile bg-no-repeat bg-bottom bg-cover sm:bg-technology-tablet lg:bg-technology-desktop;
+}
+
+.exploreHover {
+	@apply before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:w-full before:h-full before:p-0 hover:before:p-[13rem] before:bg-[rgba(255,255,255,0.1)] before:rounded-full before:transition-all before:duration-300 before:ease-in-out;
+}
+
+.navHover {
+	@apply hover:border-[hsla(0,0%,100%,0.2)] hover:transition-all hover:duration-300 hover:ease-in-out;
 }
